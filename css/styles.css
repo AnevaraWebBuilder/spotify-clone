@@ -1,0 +1,232 @@
+:root{
+
+	/* COLORS */
+	--black: #000000;
+	--white: #FFFFFF;
+	--green: #1ED760; 
+	--gainsboro: #D9DADC;
+	--celadon: #96F0B6;
+	--indigoBlue: #202F72;
+	--royalBlueDark: #1A275E;
+	--pink: #F46EBE;
+
+
+	--denimBlue: #2941AB;
+
+	/* FONTS */
+	--openSans: 'Open Sans', sans-serif;
+
+}
+
+/* GLOBALS */
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-family: var(--openSans);
+}
+
+body{
+
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+	font-size: 1.5rem;
+}
+
+a{
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+/* UTILITIES */
+
+.heading{
+	font-size: 5.7rem;
+	letter-spacing: -.2rem;
+}
+
+.noMargin{
+	margin: 0;
+}
+
+.indigo{
+	color: var(--indigoBlue);
+}
+
+.green{
+	color: var(--green);
+}
+
+.denimBlue{
+	color: var(--denimBlue);
+}
+
+.category{
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/* HEADER */
+
+.header{
+	height: 77rem;
+	background-color: var(--celadon);
+}
+
+.bar{
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--black);
+	padding: 1.7rem 11rem;
+}
+
+.nav{
+	display: flex;
+	
+	align-items: center;
+}
+
+.nav a{
+	color: var(--white);
+	font-weight: 700;
+	margin: 0 2rem;
+}
+
+.nav a:hover{
+	color: var(--green);
+	cursor: pointer;
+}
+
+.nav a:last-of-type{
+	margin-right: 0;
+}
+
+.separator{
+	color: var(--white);
+}
+
+.nav .login{
+	color: var(--gainsboro);
+}
+
+
+.logo img{
+	width: 13rem;
+}
+
+.hero{
+	display: flex;
+	padding:  6.8rem 10.5rem 0;
+}
+
+.category{
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+
+.hero__info{
+	font-size: 2.3rem;
+	line-height: 1.6;
+	font-weight: 500;
+}
+
+.button{
+	background-color: var(--indigoBlue);
+	display: inline-block;
+	color: var(--celadon);
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 1.7rem 2.8rem;
+	border-radius: 5rem;
+	cursor: pointer;
+}
+
+.button:hover{
+	scale: 105%;
+	background-color: var(--royalBlueDark);
+}
+
+.conditions, .conditions a{
+	font-size: 1.2rem;
+	width: 85%;
+	padding-top: 3rem;
+}
+
+.right{
+	display: flex;
+	align-items: center;
+}
+
+.right img{
+	width: 40rem;
+}
+
+/* MY YEAR SECTION */
+
+.my-year{
+	background-color: var(--pink);
+	height: 60rem;
+	background-image: url('../assets/img/2.png');
+	background-position: top -23rem left 50rem;
+}
+
+.my-year__info{
+	background-color: var(--pink);
+	width: 54rem;
+	height: 100%;
+	padding:  6.8rem 0 6.8rem 10.5rem ;
+}
+
+.download-button{
+	display: flex;
+	align-items: center;
+}
+
+.app-store-btn{
+	width: 12rem;
+	cursor: pointer;
+}
+
+.google-play-btn{
+	width: 15.5rem;
+	cursor: pointer;
+}
+
+
+/* SPOTIFY FREE SECTION */
+
+.spotify-free{
+	background-color: var(--denimBlue);
+	height: 60rem;
+	background-image: url('../assets/img/3.png');
+	background-position: top 0 right 0;
+}
+
+.spotify-free-info{
+	display: flex;
+	flex-direction: column;
+	width: 54rem;
+}
+
+
+/* FOOTER */
+
+.footer{
+	background-color: var(--black);
+	height: 53rem;
+}
